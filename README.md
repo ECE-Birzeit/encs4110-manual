@@ -1,13 +1,17 @@
-# ENCS 4110 — Computer Design Laboratory Manual
+<a href="https://encs4110.birzeit.me"><img src="https://raw.githubusercontent.com/ECE-Birzeit/encs4110/main/docs/public/og.png" alt="ENCS4110 Computer Design Laboratory" width="100%"></a>
 
-LaTeX sources for the ENCS 4110 lab manual (Birzeit University).
+# ENCS4110 · Lab manual (LaTeX)
+
+LaTeX sources for the ENCS4110 Computer Design Laboratory manual at Birzeit University. The PDFs built here are published on [encs4110.birzeit.me](https://encs4110.birzeit.me).
+
+**[Full manual PDF](https://encs4110.birzeit.me/manual/encs4110_manual.pdf)** · [Website](https://encs4110.birzeit.me) · [Website source](https://github.com/ECE-Birzeit/encs4110) · [All labs](https://birzeit.me)
 
 ## Branches
 
 - **`main`** — LaTeX source (chapters, preamble, resources, code snippets).
 - **`pdf`** — published output only: the per-experiment PDFs and the full manual
   (`encs4110_1.pdf` … `encs4110_9.pdf`, `encs4110_manual.pdf`). This branch is
-  consumed as a git submodule by the [encs4110](https://github.com/mabushelbaia/encs4110)
+  consumed as a git submodule by the [encs4110](https://github.com/ECE-Birzeit/encs4110)
   website at `docs/public/manual`.
 
 ## Output worktree
@@ -56,3 +60,11 @@ cd ../encs4110            # the website repo
 git submodule update --remote docs/public/manual
 git add docs/public/manual && git commit -m "Update manual PDFs"
 ```
+
+## Contributing
+
+Found a mistake in the PDF? [Open an issue](https://github.com/ECE-Birzeit/encs4110-manual/issues/new/choose) or send a pull request against the chapter in `chapters/`. Run `make` for the experiment you changed before pushing, to make sure it still compiles. See the [contributing guide](https://github.com/ECE-Birzeit/.github/blob/main/CONTRIBUTING.md).
+
+---
+
+<sub>Part of [ECE Lab Manuals](https://birzeit.me) · Maintained by [Mohammad Abu-Shelbaia](https://github.com/mabushelbaia)</sub>
