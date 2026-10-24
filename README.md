@@ -65,6 +65,16 @@ git add docs/public/manual && git commit -m "Update manual PDFs"
 
 Found a mistake in the PDF? [Open an issue](https://github.com/ECE-Birzeit/encs4110-manual/issues/new/choose) or send a pull request against the chapter in `chapters/`. Run `make` for the experiment you changed before pushing, to make sure it still compiles. See the [contributing guide](https://github.com/ECE-Birzeit/.github/blob/main/CONTRIBUTING.md).
 
+## License
+
+The written content is licensed under [CC BY 4.0](LICENSE): you may share and adapt it, including for your own course, as long as you credit the source. Code, meaning the code listings in `snippets/` and the `Makefile`, is licensed under [MIT](LICENSE-CODE). © 2026 Mohammad Abu-Shelbaia.
+
+Not covered by either license, and still owned by their authors:
+
+- `resources/birzeit-logo.png` and `resources/birzeit-logo.svg`
+
+The Birzeit University name and logo are the university's; they are not licensed here. Screenshots of third-party software, and product names and logos, belong to their respective owners.
+
 ---
 
 <sub>Part of [ECE Lab Manuals](https://birzeit.me) · Maintained by [Mohammad Abu-Shelbaia](https://github.com/mabushelbaia)</sub>
