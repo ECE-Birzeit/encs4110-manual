@@ -24,7 +24,7 @@ jobs:
     runs-on: ubuntu-latest
     container: texlive/texlive:latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       # The svg package shells out to Inkscape to render the logo
       - name: Install Inkscape
@@ -44,7 +44,7 @@ jobs:
         if: failure()
         run: grep -h -A3 '^!' *.log || true
 
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: manual-pdfs
           path: out/*.pdf
@@ -60,11 +60,11 @@ jobs:
       group: publish-pdf
       cancel-in-progress: false
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           ref: pdf
 
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v8
         with:
           name: manual-pdfs
           path: .
@@ -90,7 +90,7 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v8
         with:
           name: manual-pdfs
           path: out
